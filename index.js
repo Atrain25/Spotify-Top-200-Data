@@ -88,9 +88,9 @@ async function grabBearerToken(authToken) {
     myHeaders.append("sec-fetch-mode", "cors");
     myHeaders.append("sec-fetch-site", "same-site");
     myHeaders.append("user-agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36");
-    myHeaders.append("Cookie", "__Host-device_id=AQACAgJ_GxDUxyd62gqfm9VcnQubfdkXLhs17_OLSVlgj1qcAXzyQ9j9AfbTZrucXM1pRqOeWNxDdxe84fhGydShLxGAg9pTfWo; __Host-sp_csrf_sid=e9debb2817e96835f0e22d14d7c1ad61020bc092f2b9e654ac941d1c2c8a7397; csrf_token=AQDq7AUYXyJeU2vLQhehVmucpza88tn0phkc1usfBrui0oGmCq05_4S3Xf8kI4uxdp3tjsBud8w6j-2b; sp_sso_csrf_token=013acda71921cc235452979402b55f57823b89edc631363536363033383731343938; sp_tr=false");
+    myHeaders.append("Cookie", "MANUALLY GET THESE FROM SPOTIFY WEBSITE");
 
-    var raw = "grant_type=authorization_code&client_id=44407c71b3b24071865aaa4fea948a15&code=" + authToken + "&redirect_uri=https%3A%2F%2Fcharts.spotify.com&code_verifier=IUhVco5kB4K6536sX3y%7Eg7Q5rY6%7ESFwFIBUQa-8iV25xpdU-Anxz%7EQ2tk7Inm21NtYQ7Nau6zKl4Zr8_9_s-VNUtCnaCoK8cx8gC12IqepK0eBdhqEzEz1cLbDCAZ_rk";
+    var raw = "grant_type=authorization_code&client_id=MANUALLY GET THIS FROM SPOTIFY&code=" + authToken + "&redirect_uri=https%3A%2F%2Fcharts.spotify.com&code_verifier=IUhVco5kB4K6536sX3y%7Eg7Q5rY6%7ESFwFIBUQa-8iV25xpdU-Anxz%7EQ2tk7Inm21NtYQ7Nau6zKl4Zr8_9_s-VNUtCnaCoK8cx8gC12IqepK0eBdhqEzEz1cLbDCAZ_rk";
 
 
     var requestOptions = {
