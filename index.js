@@ -28,7 +28,7 @@ async function grabToken() {
     myHeaders.append("authority", "accounts.spotify.com");
     myHeaders.append("accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9");
     myHeaders.append("accept-language", "en-US,en;q=0.9");
-    myHeaders.append("cookie", "__Host-device_id=AQAwVeBT8biDRHvkW9gk5vmi_1dxYtTeaTxsmQUA578NtlRwNoa8E0ZgRJq8yAapgyYSffsdueB1sQALHzCGXtEVjIFKveGBdS8; sp_tr=false; remember=autttttt; sp_dc=AQAQUDsbtGVJBJmsTr7OE7vCUuxw5a7HOuCpt2UXIIEaDqdrAi7UpVVl3MFV_zE1-L2-9ITylFmcm7dPaSTl8uFI_qOeauZCMGhYmNn6N-zNEEN5r1OxLl29uA_9pm3I-NyoE_zIKhIV-qPBUYXaXW2u25hFKdt2; sp_key=f6417e49-64bc-4946-a4df-6b15f225dc73; sp_sso_csrf_token=013acda719f035d81d2adce21b47eaf91409cad80d31363536363033313333363934; __Host-sp_csrf_sid=b1121eae7faa67498a21a597397cc172250ef6cb66e46b0a3258ba4490fc28fb; __Host-device_id=AQACAgJ_GxDUxyd62gqfm9VcnQubfdkXLhs17_OLSVlgj1qcAXzyQ9j9AfbTZrucXM1pRqOeWNxDdxe84fhGydShLxGAg9pTfWo; __Host-sp_csrf_sid=e9debb2817e96835f0e22d14d7c1ad61020bc092f2b9e654ac941d1c2c8a7397; csrf_token=AQDU8egR-6OVbKigPzsIXRoAFT2FOubHDfJURykC9YXLzUSPprDbS7xxp_px73sCUnLGBUlCruxvaeb-; sp_sso_csrf_token=013acda71921cc235452979402b55f57823b89edc631363536363033383731343938; sp_tr=false");
+    myHeaders.append("cookie", "MANUALLY GET COOKIES FROM WEBSITE");
     myHeaders.append("referer", "https://charts.spotify.com/");
     myHeaders.append("sec-ch-ua", "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\"");
     myHeaders.append("sec-ch-ua-mobile", "?0");
@@ -45,7 +45,7 @@ async function grabToken() {
         redirect: 'follow'
     };
 
-    const response = fetch("https://accounts.spotify.com/oauth2/v2/auth?response_type=code&client_id=44407c71b3b24071865aaa4fea948a15&scope=user-read-email+user-read-private+ugc-image-upload&redirect_uri=https%3A%2F%2Fcharts.spotify.com&code_challenge=ztpqHsN82_nJFzCxFh0iNfsqZAu0TDKex18FGXsWMP4&code_challenge_method=S256&state=rJbWPMWbL%7EMulSVDbDBqWOZghYhSN-Qu&response_mode=web_message&prompt=none", requestOptions)
+    const response = fetch("MANUALLY GET THIS FROM THE NETWORK TAB SHOULD LOOK SOMETHING LIKE THIS: https://accounts.spotify.com/oauth2/v2/auth?response_type=code&client_id=44407c71b3b24071865aaa4fea948a15&scope=user-read-email+user-read-private+ugc-image-upload&redirect_uri=https%3A%2F%2Fcharts.spotify.com&code_challenge=ztpqHsN82_nJFzCxFh0iNfsqZAu0TDKex18FGXsWMP4&code_challenge_method=S256&state=rJbWPMWbL%7EMulSVDbDBqWOZghYhSN-Qu&response_mode=web_message&prompt=none", requestOptions)
         .then(response => response.text())
         .catch(error => console.log('error', error));
 
